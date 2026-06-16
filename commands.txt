@@ -1,0 +1,61 @@
+Virtual Environment:
+
+python -m venv river
+.\river\Scripts\activate
+rmdir /s /q river
+
+py -3.11 -m venv nh
+.\nh\Scripts\activate
+rmdir /s /q river
+
+-----------------------------------------
+
+How to push codes to GitHub - Initially
+
+1. Navigate to your project directory:
+   cd "C:\path\to\your\project"
+
+2. Initialize a new Git repo:
+   git init
+
+3. Add all project files to Git:
+   git add .
+
+4. Commit your changes:
+   git commit -m "final updated codes"
+
+5. Rename your local branch to main:
+   git branch -M main
+
+6. Add the GitHub repo as the remote:
+   git remote add origin https://github.com/swrjks/aegis.git
+
+7. Push your code to GitHub:
+   git push -u origin main
+
+---------------------------------------------
+
+Update Change on GitHub:
+
+1. git status
+2. git add .
+3. git commit -m "updated json dir"
+4. git push
+
+---------------------------------------------
+
+To Remove Git & Start Over:
+   rd /s /q .git (terminal)
+  Remove-Item -Recurse -Force .git  (Powershell)
+
+
+---------------------------------------------
+
+Cuda: (In venv)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+import torch
+print(torch.cuda.is_available())
+print(torch.cuda.get_device_name(0))
+
+
